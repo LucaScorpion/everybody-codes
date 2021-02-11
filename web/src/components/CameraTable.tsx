@@ -21,8 +21,8 @@ export const CameraTable: React.FC<Props> = ({ cameras, className, header }) => 
       </tr>
     </thead>
     <tbody>
-      {cameras.map((c) => (
-        <tr key={c.num}>
+      {cameras.map((c, i) => (
+        <tr key={i}>
           <td>{c.num}</td>
           <td>{c.name}</td>
           <td>{c.latitude}</td>

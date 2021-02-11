@@ -19,5 +19,10 @@ function parseCamera(line: string): Camera | null {
   const nameParts = name.split(/[- ]/, 4);
   const num = parseInt(nameParts[2], 10);
 
-  return { name, num, latitude, longitude };
+  return {
+    name,
+    num,
+    latitude: parseFloat(latitude),
+    longitude: parseFloat(longitude),
+  };
 }

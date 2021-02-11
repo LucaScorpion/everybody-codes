@@ -1,8 +1,8 @@
 export interface Camera {
   name: string;
   num: number;
-  latitude: string;
-  longitude: string;
+  latitude: number;
+  longitude: number;
 }
 
 export function cameraToString({ name, num, latitude, longitude }: Camera): string {

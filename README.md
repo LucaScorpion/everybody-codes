@@ -30,7 +30,7 @@ node build/server.js
 npm start
 ```
 
-De server runt standaard op poort 3000. Dit kan worden ingesteld door de `PORT` environment variable op een andere waarde te zetten.
+De server runt standaard op poort 4000. Dit kan worden ingesteld door de `PORT` environment variable op een andere waarde te zetten.
 
 De server heeft 1 endpoint: `GET /api/cameras`. Dit endpoint geeft een lijst met alle cameras:
 

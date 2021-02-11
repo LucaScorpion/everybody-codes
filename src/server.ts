@@ -1,7 +1,8 @@
+import cors from 'cors';
 import express from 'express';
 import { camerasFromCsv } from './camerasFromCsv';
 
-const PORT = parseInt(process.env.PORT || '3000', 10);
+const PORT = parseInt(process.env.PORT || '4000', 10);
 
 async function bootstrap(): Promise<void> {
   // Load the data.
@@ -9,6 +10,7 @@ async function bootstrap(): Promise<void> {
 
   // Start the server.
   const app = express();
+  app.use(cors());
   app.get('/api/cameras', (req, res) => res.json(cameras));
 
   app.listen(PORT);

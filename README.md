@@ -52,6 +52,12 @@ De server heeft 1 endpoint: `GET /api/cameras`. Dit endpoint geeft een lijst met
 ]
 ```
 
-## Webapp
+## Frontend
 
-// TODO
+Start de web server:
+
+```shell
+npm start --prefix web
+```
+
+Dit runt de frontend op poort 3000.

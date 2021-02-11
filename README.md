@@ -8,9 +8,11 @@ npm run build
 
 Het is echter ook mogelijk om de TypeScript scripts direct te runnen (via bijvoorbeeld `ts-node`), hiervoor staan de commands bij de specifieke opdracht.
 
-Alle commands gaan ervan uit dat ze in de root project directory gerund worden.
+Alle commands gaan ervan uit dat ze in de root directory van het project gerund worden.
 
 ## CLI
+
+De CLI code staat in de `src` map.
 
 Zoeken op een camera naam:
 
@@ -21,6 +23,8 @@ npm run search -- --name Neude
 ```
 
 ## API
+
+De API code staat in de `src` map.
 
 Start de server:
 
@@ -52,12 +56,16 @@ De server heeft 1 endpoint: `GET /api/cameras`. Dit endpoint geeft een lijst met
 ]
 ```
 
+Zie de response van dit endpoint in de browser op http://localhost:4000/api/cameras.
+
 ## Frontend
 
-Start de web server:
+De frontend code staat in de `web` map, dit is een apart npm project.
+
+De frontend is gemaakt met React. De (development) web server start je met:
 
 ```shell
 npm start --prefix web
 ```
 
-Dit runt de frontend op poort 3000.
+Dit runt de frontend op http://localhost:3000. Tijdens development gaat de frontend ervan uit dat de API draait op `http://localhost:4000`.

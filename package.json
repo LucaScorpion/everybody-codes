@@ -1,0 +1,18 @@
+{
+  "name": "everybody-codes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "search": "ts-node src/search.ts"
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "@types/yargs": "^16.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}

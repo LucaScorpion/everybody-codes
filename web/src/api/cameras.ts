@@ -1,3 +1,5 @@
+import { apiUrl } from './apiUrl';
+
 export interface Camera {
   name: string;
   num: number;
@@ -6,5 +8,5 @@ export interface Camera {
 }
 
 export async function listCameras(): Promise<Camera[]> {
-  return (await fetch('http://localhost:4000/api/cameras')).json();
+  return (await fetch(apiUrl('api/cameras'))).json();
 }

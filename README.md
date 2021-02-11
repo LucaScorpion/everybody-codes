@@ -14,19 +14,43 @@ Alle commands gaan ervan uit dat ze in de root project directory gerund worden.
 
 Zoeken op een camera naam:
 
-```
+```shell
 node build/search.js --name Neude
-```
-
-Of:
-
-```
+# Of:
 npm run search -- --name Neude
 ```
 
 ## API
 
-// TODO
+Start de server:
+
+```shell
+node build/server.js
+# Of:
+npm start
+```
+
+De server runt standaard op poort 3000. Dit kan worden ingesteld door de `PORT` environment variable op een andere waarde te zetten.
+
+De server heeft 1 endpoint: `GET /api/cameras`. Dit endpoint geeft een lijst met alle cameras:
+
+```json
+[
+  {
+    "name": "UTR-CM-501 Neude rijbaan voor Postkantoor",
+    "num": 501,
+    "latitude": "52.093421",
+    "longitude": "5.118278"
+  },
+  {
+    "name": "UTR-CM-502 Potterstraat / Loeff Berchmakerstraat",
+    "num": 502,
+    "latitude": "52.093599",
+    "longitude": "5.118325"
+  },
+  ...
+]
+```
 
 ## Webapp
 

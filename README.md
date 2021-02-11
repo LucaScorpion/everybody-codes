@@ -39,14 +39,14 @@ De server heeft 1 endpoint: `GET /api/cameras`. Dit endpoint geeft een lijst met
   {
     "name": "UTR-CM-501 Neude rijbaan voor Postkantoor",
     "num": 501,
-    "latitude": "52.093421",
-    "longitude": "5.118278"
+    "latitude": 52.093421,
+    "longitude": 5.118278
   },
   {
     "name": "UTR-CM-502 Potterstraat / Loeff Berchmakerstraat",
     "num": 502,
-    "latitude": "52.093599",
-    "longitude": "5.118325"
+    "latitude": 52.093599,
+    "longitude": 5.118325
   },
   ...
 ]
